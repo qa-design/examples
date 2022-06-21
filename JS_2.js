@@ -54,12 +54,12 @@ console.log(`В слове ${words[1]} гласных ${countVowels('case')}, с
 console.log(`В слове ${words[2]} гласных ${countVowels('case')}, согласных ${words[2].length-countVowels('case')}`);
 
 // 4**. Написать функцию, которая проверяет, является ли слово палиндромом
-// e.g. function isPalindrom(word)
+// e.g. function isPalindrom()
 // Проверки: 'abba', 'Abba'
 
 strings = ["abba", "Abba"]
 
-function isPalindrom(...stings){
+function isPalindrom(){
     count = 1
     strings.forEach(string => {
         for (let i = 0; i < string.length / 2; i++){
@@ -75,4 +75,4 @@ function isPalindrom(...stings){
     });
 }
 
-isPalindrom(strings)
+isPalindrom()
